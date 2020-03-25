@@ -44,8 +44,10 @@ def addStars(num):
         #Sprite(asset, pos=(0, 0), edgedef=None)
         starSprite = Sprite(starImage,randomPosition)
         
-
-makeBackground(black)
-addStars(50)
-#run the game
-myapp.run()
+if __name__ == "__main__":
+    # execute only if run as a script
+    
+    makeBackground(black)
+    addStars(50)
+    #run the game
+    myapp.run()
