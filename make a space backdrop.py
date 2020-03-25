@@ -1,7 +1,10 @@
 from ggame import App, Sprite, ImageAsset, Frame, CircleAsset
-from ggame import SoundAsset, Sound, TextAsset, Color, LineStyle
+from ggame import Color, LineStyle, RectangleAsset
 import math
 from time import time
+
+#load the game
+myapp = App()
 
 #taken from https://github.com/Runpython-IntroProgramming/Course-Syllabus/wiki/Displaying-Graphics
 
@@ -14,11 +17,13 @@ black = Color(0x000000, 1.0)
 # Define a line style that is a thin (1 pixel) wide black line
 thinline = LineStyle(1, black)
 
-# A graphics asset that represents a rectangle
-rectangle = RectangleAsset(50, 20, thinline, blue)
+#create an instance of RectangleAsset(width, height, line=LineStyle(1, BLACK), fill=BLACK)[source]
+#for more info read https://ggame.readthedocs.io/en/latest/ggameapi.html#rectangleasset
 
 # Now display a rectangle
+rectangle = RectangleAsset(myapp.width, myapp.height, thinline, black)
 Sprite(rectangle)
 
-myapp = App()
+
+#run the game
 myapp.run()
