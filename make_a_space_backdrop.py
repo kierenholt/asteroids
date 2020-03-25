@@ -3,9 +3,7 @@ from ggame import Color, LineStyle, RectangleAsset
 import math
 from time import time
 import random
-
-#load the game
-myapp = App()
+myapp = None
 
 #taken from https://github.com/Runpython-IntroProgramming/Course-Syllabus/wiki/Displaying-Graphics
 
@@ -47,7 +45,11 @@ def addStars(num):
 if __name__ == "__main__":
     # execute only if run as a script
     
+    #load the game
+    myapp = App()
+
     makeBackground(black)
     addStars(50)
+    
     #run the game
     myapp.run()
