@@ -8,6 +8,9 @@ myapp = App()
 
 #taken from https://github.com/Runpython-IntroProgramming/Course-Syllabus/wiki/Displaying-Graphics
 
+#create some instances of Color(color, alpha)
+#for more info read https://ggame.readthedocs.io/en/latest/ggameapi.html#color
+
 # Three primary colors with no transparency (alpha = 1.0)
 red = Color(0xff0000, 1.0)
 green = Color(0x00ff00, 1.0)
@@ -17,7 +20,7 @@ black = Color(0x000000, 1.0)
 # Define a line style that is a thin (1 pixel) wide black line
 thinline = LineStyle(1, black)
 
-#create an instance of RectangleAsset(width, height, line=LineStyle(1, BLACK), fill=BLACK)[source]
+#create an instance of RectangleAsset(width, height, line=LineStyle(1, BLACK), fill=BLACK)
 #for more info read https://ggame.readthedocs.io/en/latest/ggameapi.html#rectangleasset
 
 # Now display a rectangle
