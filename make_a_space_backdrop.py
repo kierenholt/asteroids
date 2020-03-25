@@ -3,8 +3,6 @@ from ggame import Color, LineStyle, RectangleAsset
 import math
 from time import time
 import random
-myapp = None
-#DO NOT CHANGE THE CODE ABOVE
 
 #taken from https://github.com/Runpython-IntroProgramming/Course-Syllabus/wiki/Displaying-Graphics
 
