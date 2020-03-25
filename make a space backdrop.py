@@ -1,5 +1,5 @@
 from ggame import App, Sprite, ImageAsset, Frame, CircleAsset
-from ggame import SoundAsset, Sound, TextAsset, Color
+from ggame import SoundAsset, Sound, TextAsset, Color, LineStyle
 import math
 from time import time
 
