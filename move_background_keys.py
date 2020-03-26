@@ -17,6 +17,7 @@ if __name__ == "__main__":
     #load the game
     myapp = App()
     
+    #these functions are imported 
     makeBackground(black,myapp)
     addStars(50,myapp)
     
