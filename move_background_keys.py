@@ -13,7 +13,10 @@ black = Color(0x000000, 1.0)
 def moveSpriteDownOnKey(sprite,app,keyname):
     #bind a key to the keyboard event using listenKeyEvent(eventtype, key, callback)
     #https://ggame.readthedocs.io/en/latest/ggameapi.html#ggame.app.App.listenKeyEvent
-    app.listenKeyEvent("keydown", keyname, sprite.x += 1)
+    def moveSpriteDown(sprite):
+        sprite.x += 1
+    
+    app.listenKeyEvent("keydown", keyname, moveSpriteDown)
 
 
 if __name__ == "__main__":
