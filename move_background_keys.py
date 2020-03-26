@@ -8,12 +8,6 @@ from time import time
 from make_a_space_backdrop import makeBackground, addStars
 
 
-#taken from https://github.com/Runpython-IntroProgramming/Course-Syllabus/wiki/Displaying-Graphics
-
-# Three primary colors with no transparency (alpha = 1.0)
-red = Color(0xff0000, 1.0)
-green = Color(0x00ff00, 1.0)
-blue = Color(0x0000ff, 1.0)
 black = Color(0x000000, 1.0)
 
 
