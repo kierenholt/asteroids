@@ -11,13 +11,15 @@ from make_a_space_backdrop import makeBackground, addStars
 black = Color(0x000000, 1.0)
 
 
+
+
 if __name__ == "__main__":
     # execute only if run as a script
     
     #load the game
     myapp = App()
     
-    #these functions are imported 
+    #these functions are imported in line 8 
     makeBackground(black,myapp)
     addStars(50,myapp)
     
